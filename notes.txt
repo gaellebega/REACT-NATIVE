@@ -1,0 +1,2 @@
+props are like passing the info into the  components
+

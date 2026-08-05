@@ -1,16 +1,15 @@
-//app is where he rendering happens  
-//go in the src then create the components folder
 import Header from "./components/Header";
 import TaskList from "./components/TaskList";
+
 function App() {
   return (
-<div>
-      <Header/>
-    <TaskList/>
-     
-</div>
-    
-  )
+    <div className="min-h-screen bg-blue-100 flex justify-center items-center">
+      <div className="bg-white shadow-lg rounded-xl p-6 w-[450px]">
+        <Header />
+        <TaskList />
+      </div>
+    </div>
+  );
 }
 
-export default App
+export default App;
