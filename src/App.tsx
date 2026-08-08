@@ -43,6 +43,11 @@ myvalue="age";
 myvalue=true;
 myvalue={name:"Gaelle"};
 
+// union
+let id:number|string=101;
+// LITERAL TYPES 
+
+
 
 function App() {
   return (

@@ -41,3 +41,6 @@ let data=undefined;
 let myvalue=10;
 myvalue="Hello";
 myvalue="true";
+
+let id=101;
+id="ABC";
