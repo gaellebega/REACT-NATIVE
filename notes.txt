@@ -1,2 +1,7 @@
 props are like passing the info into the  components
 
+void return undefined but never return nothing
+
+
+how to get the properties using type and interface
+
