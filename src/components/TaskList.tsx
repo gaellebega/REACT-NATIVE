@@ -1,55 +1,17 @@
-import Button from "./Button";
+import React from 'react'
 
-function TaskList() {
+const TaskList = () => {
   return (
-    <div>
-
-      <div className="flex gap-2 mb-5">
-        <input
-          type="text"
-          placeholder="Enter a task..."
-          className="border rounded-lg p-2 flex-1"
-        />
-
-        <Button
-          label="Add"
-          color="bg-green-500"
-        />
+    <form className="w-[70%]">
+      <div className='relative'>
+      <input type="text" 
+      placeholder="Enter a task" 
+      className=" p-3 pr-20 w-full border border-gray-300 rounded-full focus:outline-none focus:border-blue-300 "/>
+      <button type="submit" className=' absolute  px-5 py-3 right-0 top-1/2 -translate-y-1/2 bg-amber-600  rounded-full transition duration-300 hover:shadow-md  text-lg text-white font-bold cursor-pointer scale-[0.8] '>Go</button>
       </div>
 
-      <div className="space-y-3">
-
-        <div className="flex justify-between items-center border rounded-lg p-3">
-          <span>Learn React</span>
-
-          <Button
-            label="Delete"
-            color="bg-red-500"
-          />
-        </div>
-
-        <div className="flex justify-between items-center border rounded-lg p-3">
-          <span>Study TypeScript</span>
-
-          <Button
-            label="Delete"
-            color="bg-red-500"
-          />
-        </div>
-
-        <div className="flex justify-between items-center border rounded-lg p-3">
-          <span>Build Task Manager</span>
-
-          <Button
-            label="Delete"
-            color="bg-orange-500"
-          />
-        </div>
-
-      </div>
-
-    </div>
-  );
+    </form>
+  )
 }
 
-export default TaskList;
+export default TaskList
