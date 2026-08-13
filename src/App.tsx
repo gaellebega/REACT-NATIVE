@@ -2,6 +2,7 @@
 import { useState } from "react";
 import Header from "./components/Header";
 import TaskList from "./components/TaskList";
+import Counter from "./components/Counter"
 function App() {
   // this is how the usestates are created
   const [todo,setTodo]=useState<string>("");
@@ -27,6 +28,7 @@ function App() {
     <div className="min-h-screen bg-blue-100 flex justify-center items-center">
       <div className="bg-white shadow-lg rounded-xl p-6 w-[450px]">
         <Header />
+        <Counter/>
         {/* <TaskList /> */}
         <TaskList 
          todo={todo} 
