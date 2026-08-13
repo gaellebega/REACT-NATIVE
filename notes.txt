@@ -5,3 +5,13 @@ void return undefined but never return nothing
 
 how to get the properties using type and interface
 
+state is the  data that changes with time
+ data that can be changed from one time to another
+ ex:loading spinner 
+ before the fetch the data was like undefined but after fetching then we have the data
+ showing the user there is an error 
+ showing the notification of something that happened
+ we need to track the states of our components
+
+
+
