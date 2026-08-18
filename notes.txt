@@ -14,7 +14,10 @@ state is the  data that changes with time across the renders in react
  showing the notification of something that happened
  we need to track the states of our components
 
+useEffect is used to show the all the sideEffects changes that have happened
+
  state have to take the default value and when it is not there then it is going to be undefined
+ inputRef.current: is used to give the current data of the input in the react
 
 
 

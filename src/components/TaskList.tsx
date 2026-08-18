@@ -1,5 +1,5 @@
 // import React from 'react'
-import { Dispatch, SetStateAction } from 'react'
+import { Dispatch, SetStateAction,useRef } from 'react'
 //create the interface props
 interface Props{
   todo:string;
@@ -12,12 +12,21 @@ interface Props{
 }
 // todo have to be the string then setTodo have to be the function
 const TaskList = ({todo,setTodo,handleAdd}:Props) => {
+  // we use the html element becuse input is an element but when we have the div we could say html Div element
+  const inputRef=useRef<HTMLInputElement>(null);
   
   return (
     // when we click go then this function have to fireOFF
-    <form className="w-[70%]" onSubmit={handleAdd}>
+    <form className="w-[70%]" onSubmit={
+      // this when we click inside the input field so that thebackground ecomes blur
+      (e)=>{
+      handleAdd(e);
+      inputRef.current?.blur();
+      }}>
       <div className='relative'>
-      <input type="text" 
+      <input
+       type="text" 
+       ref={inputRef}
       // this is used to update the state which is function of the SetTodo
       value={todo}
       onChange={
